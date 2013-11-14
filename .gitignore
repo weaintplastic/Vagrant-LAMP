@@ -1,0 +1,8 @@
+/public/*
+!/public/loop.local
+
+/.chef/databags/sites/*
+!/.chef/databags/sites/loop.local.json
+
+/backup/db/*
+!/backup/db/empty

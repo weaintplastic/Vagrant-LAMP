@@ -1,0 +1,48 @@
+[submodule ".chef/cookbooks/generic/apache2"]
+	path = .chef/cookbooks/generic/apache2
+	url = https://github.com/opscode-cookbooks/apache2.git
+[submodule ".chef/cookbooks/generic/php"]
+	path = .chef/cookbooks/generic/php
+	url = https://github.com/opscode-cookbooks/php.git
+[submodule ".chef/cookbooks/generic/build-essential"]
+	path = .chef/cookbooks/generic/build-essential
+	url = https://github.com/opscode-cookbooks/build-essential.git
+[submodule ".chef/cookbooks/generic/mysql"]
+	path = .chef/cookbooks/generic/mysql
+	url = https://github.com/opscode-cookbooks/mysql.git
+[submodule ".chef/cookbooks/generic/xml"]
+	path = .chef/cookbooks/generic/xml
+	url = https://github.com/opscode-cookbooks/xml.git
+[submodule ".chef/cookbooks/generic/apt"]
+	path = .chef/cookbooks/generic/apt
+	url = https://github.com/opscode-cookbooks/apt.git
+[submodule ".chef/cookbooks/generic/git"]
+	path = .chef/cookbooks/generic/git
+	url = https://github.com/opscode-cookbooks/git.git
+[submodule ".chef/cookbooks/generic/zsh"]
+	path = .chef/cookbooks/generic/zsh
+	url = https://github.com/opscode-cookbooks/zsh
+[submodule ".chef/cookbooks/generic/memcached"]
+	path = .chef/cookbooks/generic/memcached
+	url = https://github.com/opscode-cookbooks/memcached.git
+[submodule ".chef/cookbooks/generic/imagemagick"]
+	path = .chef/cookbooks/generic/imagemagick
+	url = https://github.com/opscode-cookbooks/imagemagick.git
+[submodule ".chef/cookbooks/generic/openssl"]
+	path = .chef/cookbooks/generic/openssl
+	url = https://github.com/opscode-cookbooks/openssl.git
+[submodule ".chef/cookbooks/generic/mailcatcher"]
+	path = .chef/cookbooks/generic/mailcatcher
+	url = https://github.com/bryantebeek/chef-mailcatcher.git
+[submodule ".chef/cookbooks/generic/sqlite"]
+	path = .chef/cookbooks/generic/sqlite
+	url = https://github.com/opscode-cookbooks/sqlite.git
+[submodule ".chef/cookbooks/generic/curl"]
+	path = .chef/cookbooks/generic/curl
+	url = https://github.com/retr0h/cookbook-curl.git
+[submodule ".chef/cookbooks/generic/nodejs"]
+	path = .chef/cookbooks/generic/nodejs
+	url = https://github.com/mdxp/nodejs-cookbook.git
+[submodule ".chef/cookbooks/generic/cron"]
+	path = .chef/cookbooks/generic/cron
+	url = https://github.com/opscode-cookbooks/cron.git

@@ -1,0 +1,7 @@
+{
+    "id": "loop",
+    "host": "loop.local",
+    "aliases": [
+        "loop.local.192.168.1.164.xip.io"
+    ]
+}

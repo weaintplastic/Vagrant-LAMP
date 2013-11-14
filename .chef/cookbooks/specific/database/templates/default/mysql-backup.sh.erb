@@ -1,0 +1,1 @@
+mysql -u root -p<%= @server_root_password %> -e 'show databases' | while read db; do mysqldump -u root -p<%= @server_root_password %> --complete-insert "$db" > "/vagrant/backup/db/${db}.sql"; done
