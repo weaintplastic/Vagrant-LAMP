@@ -116,6 +116,20 @@ This Vagrant installation has a built in maildemon [Mailcatcher](http://mailcatc
 This Vagrant installation automatically does backups of your whole database every half hour. You can find the dumps located at ''/backup/db''
 
 
+### Mac OS configuration
+
+Since Mac Os doesn't allow lower number port forwarding you have to do the following changes on the Vagrant File to make it work.
+http://frontiernxt.com/port-forwarding-small-port-numbers-with-vagrant-on-os-x
+
+
+``
+config.vm.network :forwarded_port, guest: 80, host: 8080
+``
+
+After that please execute the following statement on your command line
+``
+sudo ipfw add 100 fwd 127.0.0.1,8080 tcp from any to me 80
+``
 
 
 
