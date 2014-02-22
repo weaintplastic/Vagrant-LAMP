@@ -117,3 +117,9 @@ This Vagrant installation automatically does backups of your whole database ever
 
 
 
+
+
+
+For MacOS you need a special fix for VirtualBox to allow Port Forwarding on lower ports:
+http://frontiernxt.com/port-forwarding-small-port-numbers-with-vagrant-on-os-x
+
