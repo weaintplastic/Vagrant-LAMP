@@ -37,3 +37,9 @@ precise32
 * php::module_gd
 * php::module_sqlite3
 
+
+
+
+For MacOS you need a special fix for VirtualBox to allow Port Forwarding on lower ports:
+http://frontiernxt.com/port-forwarding-small-port-numbers-with-vagrant-on-os-x
+
