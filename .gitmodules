@@ -46,3 +46,6 @@
 [submodule ".chef/cookbooks/generic/cron"]
 	path = .chef/cookbooks/generic/cron
 	url = https://github.com/opscode-cookbooks/cron.git
+[submodule ".chef/cookbooks/generic/php-mcrypt"]
+	path = .chef/cookbooks/generic/php-mcrypt
+	url = https://github.com/BeattieM/php-mcrypt.git

@@ -37,6 +37,9 @@ run_list(
 	#"recipe[php::module_sqlite3]",
 	"recipe[php::module_mysql]",
 
+	#MCrypt
+	"recipe[php-mcrypt]",
+
 	# Setup / Confugration
 	"recipe[web::configuration]",
 	"recipe[web::setup]"
