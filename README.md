@@ -68,6 +68,7 @@ Your Vagrant environment will now be created by first downloading the base box p
 ``vagrant provision``
 This will install packages and libraries one by one to get a fully working web server environment. This may take a while, so get yourself a coffee.
 6. Now your server environment is set up correctly and ready to use.
+7. To make sure all services are working and started correctly best practice is to restart your vagrant environment executing ``vagrant reload`` in your terminal
 
 ## How to use
 
