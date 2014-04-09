@@ -73,28 +73,29 @@ This will install packages and libraries one by one to get a fully working web s
 ## How to use
 
 ### Virtual Hosts
-Each of your web projects deserves its own host. Therefore you can create virtual hosts pretty easy. Therefore navigate to the folder .chef/databags/sites. There you will see the configuration of the default site called ''loop.local''. To add your own virtual hosts copy the ''loop.local.json'' file and customize it for your own needs
+Each of your web projects deserves its own host. Therefore you can create virtual hosts pretty easy. Therefore navigate to the folder .chef/databags/sites. There you will see the configuration of the default site called *loop.local*. To add your own virtual hosts copy the *loop.local.json* file and customize it for your own needs
 
-``{
-    "id": "loop", #a unique id
-    "host": "loop.local", #the hosts dns
-    "aliases": [
-        "loop.local.192.168.1.164.xip.io" #any alias you wanna use
-    ]
-}``
+
+    {
+        "id": "loop", #a unique id
+        "host": "loop.local", #the hosts dns
+        "aliases": [
+            "loop.local.192.168.1.164.xip.io" #any alias you wanna use
+        ]
+    }
 
 Your virtual hosts will just be created during the provisioning process. So if you create a new virtual host with this file, run the following statement in your command line tool:
 
-``vagrant provision``
+    vagrant provision
 
 Doing that, a new virtual host will be created in your virtual server environment
 
-Each of your web projects has its own folder in ''/public'' with the exact name of its dns you configured using the ''json'' file.
+Each of your web projects has its own folder in */public* with the exact name of its dns you configured using the *json* file.
 
-To make your virtual host accessible you just have to add its dns to your system hosts file located at C:/Windos/system32/drivers/etc/host on Windows machines or //etc/host on Mac OS. Add the following entry
+To make your virtual host accessible you just have to add its dns to your system hosts file located at *C:/Windos/system32/drivers/etc/host* on Windows machines or */etc/host* on Mac OS. Add the following entry
 
-``127.0.0.1		loop.local
-::1             loop.local``
+    127.0.0.1		loop.local
+    ::1              loop.local
 
 Check if your new created host is working hitting its url in a browser of your choice (e.g. http://loop.local)
 
@@ -104,15 +105,15 @@ To connect to the database of your virtual server environment you should use a t
 
 Your MySQL server is accesible with the following configuration:
 
-``
-host: 127.0.0.1
-user: root
-password: root
-``
+
+    host: 127.0.0.1
+    user: root
+    password: root
+
 
 ### Log-Files
 
-Each of your virtual hosts has its own dedicated log files located at ''/var/log/apache2''. There you can find access, rewrite and error logs like yourhostname-acccess.log, yourhostname-rewrite.log or yourhostname-error.log
+Each of your virtual hosts has its own dedicated log files located at */var/log/apache2*. There you can find access, rewrite and error logs like yourhostname-acccess.log, yourhostname-rewrite.log or yourhostname-error.log
 
 ### Mail
 
@@ -120,7 +121,7 @@ This Vagrant installation has a built in maildemon [Mailcatcher](http://mailcatc
 
 ### Backups
 
-This Vagrant installation automatically does backups of your whole database every half hour. You can find the dumps located at ''/backup/db''
+This Vagrant installation automatically does backups of your whole database every half hour. You can find the dumps located at */backup/db*
 
 
 ### Mac OS configuration
@@ -128,15 +129,15 @@ This Vagrant installation automatically does backups of your whole database ever
 Since Mac Os doesn't allow lower number port forwarding you have to do the following changes on the Vagrant File to make it work.
 
 
-``
-config.vm.network :forwarded_port, guest: 80, host: 8080
-``
+
+    config.vm.network :forwarded_port, guest: 80, host: 8080
+
 
 After that please execute the following statement on your command line.
 This statement has to be executed everytime you are booting your system.
-``
-sudo ipfw add 100 fwd 127.0.0.1,8080 tcp from any to me 80
-``
+
+    sudo ipfw add 100 fwd 127.0.0.1,8080 tcp from any to me 80
+
 
 To make this changes happen everytime you reboot your system automatically, please follow the instructions by dmuth:
 (http://www.dmuth.org/node/1404/web-development-port-80-and-443-vagrant)
