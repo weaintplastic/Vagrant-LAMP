@@ -48,6 +48,8 @@ precise32
 * php::module_mysql
 * php::module_gd
 
+* php_mcrypt
+
 
 #### Database
 
@@ -56,7 +58,7 @@ precise32
 
 ## Installation
 
-1. Download and install [VirtualBox](https://www.virtualbox.org/)  and [Vagrant](http://www.vagrantup.com/) 
+1. Download and install [VirtualBox](https://www.virtualbox.org/)  and [Vagrant](http://www.vagrantup.com/)
 2. Clone this repository to a folder anywhere on your computer (e.g. your user directory) and give it a self explaining name (e.g. Vagrant)
 3. Use your command line tool and navigate to this folder
 4. Exectue the following statement
@@ -107,9 +109,13 @@ user: root
 password: root
 ``
 
+### Log-Files
+
+Each of your virtual hosts has its own dedicated log files located at ''/var/log/apache2''. There you can find access, rewrite and error logs like yourhostname-acccess.log, yourhostname-rewrite.log or yourhostname-error.log
+
 ### Mail
 
-This Vagrant installation has a built in maildemon [Mailcatcher](http://mailcatcher.me/) for you to debug mail sending using PHP. Therefore hit the URL http://localhost:1080. The interface shows you a virtual mailbox which gathers all mails sent with sendmail. You can give it a try by loading http://loop.local/mail.php. 
+This Vagrant installation has a built in maildemon [Mailcatcher](http://mailcatcher.me/) for you to debug mail sending using PHP. Therefore hit the URL http://localhost:1080. The interface shows you a virtual mailbox which gathers all mails sent with sendmail. You can give it a try by loading http://loop.local/mail.php.
 
 ### Backups
 
@@ -138,4 +144,3 @@ To make this changes happen everytime you reboot your system automatically, plea
 
 For MacOS you need a special fix for VirtualBox to allow Port Forwarding on lower ports:
 http://frontiernxt.com/port-forwarding-small-port-numbers-with-vagrant-on-os-x
-
