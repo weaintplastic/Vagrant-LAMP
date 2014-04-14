@@ -40,6 +40,9 @@ run_list(
 	#MCrypt
 	"recipe[php-mcrypt]",
 
+	#XDebug
+	"recipe[xdebug]",
+
 	# Setup / Confugration
 	"recipe[web::configuration]",
 	"recipe[web::setup]"

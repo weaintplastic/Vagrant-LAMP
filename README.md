@@ -50,6 +50,8 @@ precise32
 
 * php_mcrypt
 
+* xdebug
+
 
 #### Database
 
