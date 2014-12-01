@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/bash -ex
 #
 # rc.local
 #
@@ -11,10 +11,12 @@
 #
 # By default this script does nothing.
 
+exec > >(tee /var/log/rc.local.log|logger -t rc.local -s 2>/dev/console) 2>&1
+
 # Make sure eth0 is working. This works around Vagrant issue #391
 dhclient eth0
 
 # Start Mailcatcher
-mailcatcher --ip=0.0.0.0
+/opt/vagrant_ruby/bin/mailcatcher --ip=0.0.0.0
 
 exit 0
