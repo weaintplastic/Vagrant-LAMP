@@ -80,13 +80,13 @@ Each of your web projects deserves its own host. The creationg of a virtual host
 
 Therefore navigate to the folder .chef/databags/sites. There you will see the configuration of the default site called *loop.local*. To add your own virtual hosts copy the *loop.local.json* file and customize it for your own needs
 
-{
-    "id": "your-site", #a unique id
-    "host": "your-site.local", #the hosts dns
-    "aliases": [
-    "loop.local.192.168.1.164.xip.io" #any alias you wanna use
-    ]
-}
+    {
+        "id": "your-site", #a unique id
+        "host": "your-site.local", #the hosts dns
+        "aliases": [
+        "loop.local.192.168.1.164.xip.io" #any alias you wanna use
+        ]
+    }
 
 This configuration will tell your server to create a virtual host that you'll be able to access through the URL `http://your-site.local`. For testing your website on different browsers and devices you should also add an alias to your virtual host configuration using [xip.io](http://xip.io) following this format your-site.local.**192.168.1.164**.xip.io while *your-site.local* is the URL of your virtual hoste and *192.168.1.164* should be replaced by the IP of your workstation.
 
@@ -98,12 +98,12 @@ After executing this command your virtual host was created properly.
 
 #### 2. Update host configuration
 
-But before this host is accessible from your host (workstation) you need to update the `host` configuration located at *C:/Windos/system32/drivers/etc/host* on Windows machines or */etc/host* on Mac OS.
+But before this virtual host is accessible from your hosting system (workstation) you need to update the `host` configuration located at *C:/Windos/system32/drivers/etc/host* on Windows machines or */etc/host* on Mac OS.
 
 Add the following entry
 
-127.0.0.1		your-site.local
-::1             your-site.local
+    127.0.0.1		your-site.local
+    ::1             your-site.local
 
 Note that you need administration rights to change theses files.
 
