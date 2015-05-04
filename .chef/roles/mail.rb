@@ -5,5 +5,5 @@ description "A basic mail server"
 # Runlist
 run_list(
 	
-	"recipe[mail::setup]"
+	#"recipe[mail::setup]"
 )
