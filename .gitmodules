@@ -49,3 +49,21 @@
 [submodule ".chef/cookbooks/generic/php-mcrypt"]
 	path = .chef/cookbooks/generic/php-mcrypt
 	url = https://github.com/BeattieM/php-mcrypt.git
+[submodule ".chef/cookbooks/generic/packagecloud"]
+	path = .chef/cookbooks/generic/packagecloud
+	url = https://github.com/computology/packagecloud-cookbook.git
+[submodule ".chef/cookbooks/generic/dmg"]
+	path = .chef/cookbooks/generic/dmg
+	url = https://github.com/opscode-cookbooks/dmg.git
+[submodule ".chef/cookbooks/generic/windows"]
+	path = .chef/cookbooks/generic/windows
+	url = https://github.com/opscode-cookbooks/windows.git
+[submodule ".chef/cookbooks/generic/chef_handler"]
+	path = .chef/cookbooks/generic/chef_handler
+	url = https://github.com/opscode-cookbooks/chef_handler.git
+[submodule ".chef/cookbooks/generic/yum"]
+	path = .chef/cookbooks/generic/yum
+	url = https://github.com/chef-cookbooks/yum.git
+[submodule ".chef/cookbooks/generic/runit"]
+	path = .chef/cookbooks/generic/runit
+	url = https://github.com/hw-cookbooks/runit.git
