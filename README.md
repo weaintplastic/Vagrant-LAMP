@@ -141,7 +141,14 @@ This Vagrant installation has a built in maildemon [Mailcatcher](http://mailcatc
 This Vagrant installation automatically does backups of your whole database every half hour. You can find the dumps located at `/backup/db` in your Vagrant root directory on your host machine (workstation). If your virtual machine crashes someday you will be prepared to set up any of your host pretty easily.
 
 
-### Port-forwarding on Mac OS
+###  Port-forwarding on Mac OS
+
+#### Yosimeti
+
+http://gielberkers.com/fixing-vagrant-port-forwarding-osx-yosemite/
+
+
+#### Mavericks
 
 Since Mac OS doesn't allow lower number port forwarding you have to do the following changes on the Vagrant File to make it work.
 
